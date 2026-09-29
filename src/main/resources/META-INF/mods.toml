@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="wonderland_mp"
+version="1.0.0"
+displayName="Wonderland Multiplayer Patch"
+authors="Chifer"
+displayTest="IGNORE_ALL_VERSION"
+description='''
+Addon for The Wonderland: when one player gets pulled into the Wonderland from outside, every other player is pulled into the same dimension. Inside the Wonderland everyone travels on their own.
+'''
+
+[[dependencies.wonderland_mp]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.wonderland_mp]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.20.2)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.wonderland_mp]]
+    modId="the_wonderland"
+    mandatory=true
+    versionRange="[3,4)"
+    ordering="AFTER"
+    side="BOTH"
